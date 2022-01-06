@@ -3,53 +3,61 @@ import java.util.Scanner;
 public class TokoSepatu {
     public static void main(String[] args) {
         
-        String Username = "kasir1";
-        String Password = "1234" ;
-        String pengulangan;
+        String Username = "kasir1",
+               Password = "1234",
+               pengulangan,
+               tp;
         
-        int mk;
-        int i=0, bayar, jum=0, totalPembelian=0;
-        char js, ws;
-        String tp;
+        boolean login = false;
         
-        //Array
-        int [] ms = new int[10];
-        int [] bs = new int [10];
-        int [] us = new int[10];
-        int [] ps = new int [10];
-        int [] hg = new int[10];
-        String [] warna = new String[10];
-        String [] merk = new String[10];
-        int [] harga = new int[4];
-        int [] harga1 = new int[4];
+        int mk,
+            i=0, 
+            bayar, 
+            jum=0, 
+            totalPembelian=0;
+        
+        char js, 
+             ws;
+        
+        int [] ms = new int[10],
+               bs = new int [10],
+               us = new int[10],
+               ps = new int [10],
+               hg = new int[10],
+               harga = new int[4],
+               harga1 = new int[4];
+        String [] warna = new String[10],
+                  merk = new String[10],
+                  jenis_sepatu = new String [4],
+                  merk_sepatu = new String [4];
         double [] sub_total = new double[4];
-        String [] jenis_sepatu = new String [4];
-        String [] merk_sepatu = new String [4];
-        
-        
         Scanner in = new Scanner(System.in);
-        System.out.print("Username : ");
-        String username = in.next();
-        System.out.print("Password : ");
-        String password = in.next();
-
-        if (username.equals(Username) && password.equals(Password)) {
-        System.out.println("                                          Login Berhasil!                                         ");
-        } else if (username.equals(Username)) {
-        System.out.println("                                        Invalid Password!                                         ");
-        } else if (password.equals(Password)) {
-        System.out.println("                                        Invalid Username!                                         ");
-        } else {
-        System.out.println("                                   Invalid Username & Password!                                   ");
+        
+        while (login == false) {
+            System.out.print("Username : ");
+            String username = in.next();
+            System.out.print("Password : ");
+            String password = in.next();
+                if (username.equals(Username) && password.equals(Password)) {
+                    System.out.println("                                          Login Berhasil!                                         ");
+                    login = true;
+                    } else if (username.equals(Username)) {
+                        System.out.println("                                        Invalid Password!                                         ");
+                        
+                    } else if (password.equals(Password)) {
+                        System.out.println("                                        Invalid Username!                                         ");
+                    } else {
+                        System.out.println("                                   Invalid Username & Password!                                   ");
+                    }
         }
         
         System.out.println("==================================================================================================");
         System.out.println("                                   WELCOME TO TOKO SEPATU ARENA                                   ");
         System.out.println("==================================================================================================");
         do{
-        System.out.println("");
-        ms[i] = in.nextInt();
-        System.out.println("==================================================================================================");
+//         System.out.println("");
+//         ms[i] = in.nextInt();
+//         System.out.println("==================================================================================================");
         System.out.println(" DAFTAR MERK SEPATU :                     ");
         System.out.println(" 1. Ardiles");
         System.out.println(" 2. Eagle");
