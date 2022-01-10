@@ -423,16 +423,10 @@ public class NewClass {
         System.out.println("===========================================================================================");
             i++;
         }
-        sub_total[i] = hg[i]*jum[i];
-        total_pembelian+= sub_total[i];
-        sub_total[i] = sub_total[i] + total[i];
-        pajak = sub_total[i]*0.1;
-        jum_bay = sub_total[i]+pajak;    
-    
-        System.out.println("                                               ARENA TOKO SEPATU                                                ");
-        System.out.println("                                 Jl. Raya Banjaran, No. 180, Kabupaten Bandung                                  ");
-        System.out.println("                                               Telp. 022-5943251                                                "); 
-        System.out.println("<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>");
+        System.out.println("                                                   ARENA TOKO SEPATU                                                    ");
+        System.out.println("                                     Jl. Raya Banjaran, No. 180, Kabupaten Bandung                                      ");
+        System.out.println("                                                   Telp. 022-5943251                                                    "); 
+        System.out.println("<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>>");
         LocalDateTime tanggalDanWaktuSekarang = LocalDateTime.now();
         System.out.println("User    : kasir");
         System.out.println(tanggalDanWaktuSekarang.format(DateTimeFormatter.ofPattern("dd-MM-yyyy  HH:mm:ss")));        
@@ -440,27 +434,27 @@ public class NewClass {
         System.out.println("| No | Merk Sepatu |        Jenis Sepatu        |    Warna Sepatu    | Ukuran |    Harga    |  Jumlah  |   Sub Total   |");
         System.out.println("========================================================================================================================");
         for (i=0; i<jumlah;i++){
-        System.out.println("| "+(i+1)+"  | "+merk[i]+"\t| "+jS[i]+"\t| "+warna[i]+"\t| "+us[i]+"\t| "+hg[i]+"\t| "+jum[i]+"\t| "+sub_total[i]+"\t|");        
+        total_pembelian+= (hg[i]*jum[i]);
+        sub_total[i] = sub_total[i] + total[i];
+        pajak = total_pembelian*0.1;    
+    
+        System.out.println("| "+(i+1)+"  | "+merk[i]+"\t| "+jS[i]+"\t| "+warna[i]+"\t| "+us[i]+"\t| "+hg[i]+"\t| "+jum[i]+"\t| "+(hg[i]*jum[i])+"\t|");        
         }           
         System.out.println("========================================================================================================================");
         
-        System.out.println("Total                       : Rp   "+total_pembelian);
-        System.out.println("Pajak 10%                   : Rp   "+pajak);
-           
-        if (sub_total[i]>=6000000){
-            diskon = sub_total[i]*20/100;
-            sub_total[i] = sub_total[i]-diskon;
-            System.out.println("Diskon 20%                  : Rp   ");
+        System.out.println("                                                           Total                       : Rp. "+total_pembelian);
+        System.out.println("                                                           Pajak 10%                   : Rp. "+pajak);
+        if (total_pembelian>=600000){
+            diskon = total_pembelian*20/100;
+            System.out.println("                                                           Diskon 20%                  : Rp. "+diskon);
         }
             
-        jum_bay = jum_bay-diskon;
-        System.out.println("Total yang harus dibayar    : Rp. "+(total_pembelian+pajak));
-        System.out.print("Bayar                       : Rp. ");
+        System.out.println("========================================================================================================================");   
+        System.out.println("                                                           Total yang harus dibayar    : Rp. "+(total_pembelian+pajak-diskon));
+        System.out.print("                                                           Bayar                       : Rp. ");
         bayar = in.nextInt();
-        System.out.println("Kembalian                   : Rp. "+(bayar - total_pembelian));
-        System.out.println("===========================================================================================");
-        System.out.println("===========================================================================================");
-        System.out.println("                         Terima Kasih Telah Berbelanja di Toko Kami                        ");  
-        System.out.println("===========================================================================================");
-    }
+        System.out.println("                                                           Kembalian                   : Rp. "+(bayar - (total_pembelian+pajak-diskon)));
+        System.out.println("========================================================================================================================");
+        System.out.println("                                       Terima Kasih Telah Berbelanja di Toko Kami                                       ");  
+        System.out.println("========================================================================================================================");    }
 }
