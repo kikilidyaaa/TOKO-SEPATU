@@ -163,9 +163,9 @@ public class NewClass {
         System.out.println("   [4]. Piero");
         System.out.println("   [5]. Spotec");
         
-        for (pilihan ="Y"; pilihan.equals("Y")||pilihan.equals("y");){
         System.out.print("Jumlah sepatu yang dibeli         : ");
         jumlah = in.nextInt();
+        for (pilihan ="Y"; pilihan.equals("Y")||pilihan.equals("y");){
         System.out.print("Pilih Merk Sepatu                 : ");
         mS = in.nextInt();
         
