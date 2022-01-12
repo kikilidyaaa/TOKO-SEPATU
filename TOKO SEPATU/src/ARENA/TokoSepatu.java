@@ -141,13 +141,12 @@ public class NewClass {
     }
     static void pemesanan(){
         Scanner in = new Scanner(System.in);
-        int a, b, c, mS, ws, i=0, jumlah=0;
-        double total_pembelian=0, bayar, diskon=0, pajak=0, jum_bay=0;
+        int mS, ws, i=0, jumlah=0;
+        double total_pembelian=0, bayar, diskon=0, pajak=0, jum_bay=0, kembalian;
         char js;
         String pilihan;
         
         int [] us = new int[10];
-        int [] jum = new int[10];
         String [] jS = new String[10];
         String [] warna = new String[10];
         String [] merk = new String[10];
@@ -171,19 +170,19 @@ public class NewClass {
         
         switch (mS) {
             case 1:
-                merk[i]="Ardiles";
+                merk[i]="Ardiles \t";
                 break;
             case 2:
-                merk[i]="Eagle";
+                merk[i]="Eagle \t";
                 break;
             case 3:
-                merk[i]="Johnson";
+                merk[i]="Johnson \t";
                 break;
             case 4:   
-                merk[i]="Piero";
+                merk[i]="Piero \t";
                 break;
             case 5:
-                merk[i]="Spotec";
+                merk[i]="Spotec \t";
                 break;
             default:
                 System.out.println("Merk Tidak Tersedia");
@@ -217,30 +216,30 @@ public class NewClass {
                     
             switch (js){
                 case 'a':
-                    jS[i] = "Ardiles Aza 6.9";               
+                    jS[i] = "Ardiles Aza 6.9 \t";               
                     if (ws=='1'){
-                        warna[i] = "Putih";
+                        warna[i] = "Putih \t";
                         hg[i] = 599000;
                     }else if (ws=='2'){
-                        warna[i] = "Hitam-Orange";
+                        warna[i] = "Hitam-Orange \t";
                         hg[i] = 599000;
                     }break;
                 case 'b':
-                    jS[i] = "Ardiles Frodo";
+                    jS[i] = "Ardiles Frodo \t";
                     if (ws=='1'){
-                        warna[i] = "Biru-Putih";
+                        warna[i] = "Biru-Putih \t";
                         hg[i] = 194900;
                     }else if (ws=='2'){
-                        warna[i] = "Hijau-Putih";
+                        warna[i] = "Hijau-Putih \t";
                         hg[i] = 194900;
                     }break;
                 case 'c':
-                    jS[i] = "Ardiles Fujitora";
+                    jS[i] = "Ardiles Fujitora \t";
                     if (ws=='1'){
-                        warna[i] = "Hitam";
+                        warna[i] = "Hitam \t\t";
                         hg[i] = 189000;
                     }else if (ws=='2'){
-                        warna[i] = "Hitam-Putih";
+                        warna[i] = "Hitam-Putih \t";
                         hg[i] = 189000;
                     }break;
                 default:
@@ -276,33 +275,33 @@ public class NewClass {
                 
             switch (js){
                 case 'a':
-                    jS[i] = "Eagle Bellagio";
+                    jS[i] = "Eagle Bellagio \t\t";
                     if (ws=='1'){
-                        warna[i] = "Hitam-Putih";
+                        warna[i] = "Hitam-Putih \t";
                         hg[i] = 249000;
                     }break;
                 case 'b':
-                    jS[i] = "Eagle Monza";
+                    jS[i] = "Eagle Monza \t\t";
                     if (ws=='1'){
-                        warna[i] = "Hitam-Putih";
+                        warna[i] = "Hitam-Putih \t";
                         hg[i] = 239000;
                     }else if (ws=='2'){
-                        warna[i] = "BiruTua-Putih";
+                        warna[i] = "BiruTua-Putih \t";
                         hg[i] = 239000;
                     }else if (ws=='3'){
-                        warna[i] = "Maroon-Putih";
+                        warna[i] = "Maroon-Putih \t";
                         hg[i] = 239000;
                     }break;
                 case 'c':
-                    jS[i] = "Eagle Revor";
+                    jS[i] = "Eagle Revor \t\t";
                     if (ws=='1'){
-                        warna[i] = "Hitam";
+                        warna[i] = "Hitam \t\t";
                         hg[i] = 278000;
                     }else if (ws=='2'){
-                        warna[i] = "Hitam-Putih";
+                        warna[i] = "Hitam-Putih \t";
                         hg[i] = 278000;
                     }else if (ws=='3'){
-                        warna[i] = "BiruTua-Putih";
+                        warna[i] = "BiruTua-Putih \t";
                         hg[i] = 278000;
                     }else{
                         System.out.println("Pilihan tidak tersedia");
@@ -367,16 +366,16 @@ public class NewClass {
                 case 'a':
                     jS[i] = "Piero City Core B";
                     if (ws=='1'){
-                        warna[i] = "Hitam-Putih";
+                        warna[i] = "Hitam-Putih \t";
                         hg[i] = 329800;
                     }break;    
                 case 'b':
-                    jS[i] = "Piero Cruzher";
+                    jS[i] = "Piero Cruzher \t";
                     if (ws=='1'){
-                        warna[i] = "Asphalt Black";
+                        warna[i] = "Asphalt Black \t";
                         hg[i] = 429800;
                     }else if (ws=='2'){
-                        warna[i] = "Royal Purple";
+                        warna[i] = "Royal Purple \t";
                         hg[i] = 429800;
                     }break;                
                 default:
@@ -406,7 +405,7 @@ public class NewClass {
                 
             switch (js){
                 case 'a':
-                    jS[i] = "Spotec Alpha";
+                    jS[i] = "Spotec Alpha \t\t";
                     if (ws=='1'){
                         warna[i]="Hitam-Biru-Putih";
                         hg[i]=250000;
@@ -414,7 +413,7 @@ public class NewClass {
                         warna[i]="Hitam-Merah-Putih";
                         hg[i]=250000;
                     }else if (ws=='3'){
-                        warna[i]="Abu-Putih";
+                        warna[i]="Abu-Putih \t";
                         hg[i]=250000;
                     }break;
                 default:
@@ -422,32 +421,34 @@ public class NewClass {
             }
         }
         
-        System.out.println("Keranjang Ke-"+(i+1)+"");
-        System.out.println(""+(i+1)+"  +  "+merk[i]+"  +  "+jS[i]+"  +  "+warna[i]+"  +  "+us[i]+"  +  "+hg[i]+"");
+        System.out.println("Pesanan Ke-"+(i+1)+"  dengan merk  "+merk[i]+"  jenis sepatu  "+jS[i]+"  warna  "+warna[i]+"  ukuran  "+us[i]+" harganya yaitu Rp. "+hg[i]+"");
         
         System.out.print("Apakah ada transaksi lagi? [y/t] : ");
         pilihan = in.next();
         System.out.println("=============================================================================================");
             i++;
         }
-        System.out.println("                                                   ARENA TOKO SEPATU                                                    ");
-        System.out.println("                                     Jl. Raya Banjaran, No. 180, Kabupaten Bandung                                      ");
-        System.out.println("                                                   Telp. 022-5943251                                                    "); 
-        System.out.println("<<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<>><<><<>><<>><<>><<>><<");
+        System.out.println("┌───────────────────────────────────────────────────────┐");
+        System.out.println("│                                     ARENA TOKO SEPATU                                   │");
+        System.out.println("│                       Jl. Raya Banjaran, No. 180, Kabupaten Bandung                     │");
+        System.out.println("│                                     Telp. 022-5943251                                   │"); 
+        System.out.println("└───────────────────────────────────────────────────────┘");
         LocalDateTime tanggalDanWaktuSekarang = LocalDateTime.now();
         System.out.println("User    : kasir");
-        System.out.println(tanggalDanWaktuSekarang.format(DateTimeFormatter.ofPattern("dd-MM-yyyy  HH:mm:ss")));        
-        System.out.println("=============================================================================================");
+        System.out.println(tanggalDanWaktuSekarang.format(DateTimeFormatter.ofPattern("dd-MM-yyyy  HH:mm:ss")));
+
+        System.out.println("+----+-------------+----------------------------+--------------------+--------+-------------+");
         System.out.println("| No | Merk Sepatu |        Jenis Sepatu        |    Warna Sepatu    | Ukuran |    Harga    |");
-        System.out.println("=============================================================================================");
-        for (i=0; i<jumlah;i++){
+        System.out.println("+----+-------------+----------------------------+--------------------+--------+-------------+");
+
+        for (i=0; i<jumlah; i++) {
         total_pembelian+= hg[i];
         sub_total[i] = sub_total[i] + total[i];
-        pajak = total_pembelian*0.1;    
-    
-        System.out.println("| "+(i+1)+"  | "+merk[i]+"\t| "+jS[i]+"\t| "+warna[i]+"\t| "+us[i]+"\t| "+hg[i]+"\t|");        
-        }           
-        System.out.println("=============================================================================================");
+        pajak = total_pembelian*0.1; 
+        jum_bay = total_pembelian+pajak-diskon;
+        System.out.println("| "+(i+1)+"  |  "+merk[i]+"  |  "+jS[i]+"\t  |  "+warna[i]+"\t  |  "+us[i]+"\t  |  "+hg[i]+"\t  |");
+        }
+        System.out.println("+----+-------------+----------------------------+--------------------+--------+-------------+");        
         
         System.out.println("                                               Total                       : Rp. "+total_pembelian);
         System.out.println("                                               Pajak 10%                   : Rp. "+pajak);
@@ -456,11 +457,21 @@ public class NewClass {
             System.out.println("                                               Diskon 20%                  : Rp. "+diskon);
         }
             
-        System.out.println("========================================================================================================================");   
-        System.out.println("                                               Total yang harus dibayar    : Rp. "+(total_pembelian+pajak-diskon));
+        System.out.println("============================================================================================");   
+        System.out.println("                                               Total yang harus dibayar    : Rp. "+jum_bay);
+        do{
         System.out.print("                                               Bayar                       : Rp. ");
         bayar = in.nextInt();
-        System.out.println("                                                           Kembalian                   : Rp. "+(bayar - (total_pembelian+pajak-diskon)));
+        if (bayar == jum_bay){
+            System.out.println("                                               Uang yang Anda bayarkan pas");
+        } else if (bayar > jum_bay) {
+            kembalian = bayar - jum_bay;
+            System.out.println("                                               Uang yang Anda bayarkan lebih");
+            System.out.println("                                               Berikut kembalian Anda       : Rp.  " + kembalian);
+        } else {
+            System.out.println("                                            Uang yang Anda bayarkan kurang, silakan bayar sesuai harga yang tertera");
+        }
+        } while (bayar < jum_bay);
         System.out.println("========================================================================================================================");
         System.out.println("                                       Terima Kasih Telah Berbelanja di Toko Kami                                       ");  
         System.out.println("========================================================================================================================");
