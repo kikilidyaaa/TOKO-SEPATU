@@ -217,7 +217,7 @@ public class NewClass {
                     
             switch (js){
                 case 'a':
-                    jS[i] = "Ardiles Aza 6.9 \t";               
+                    jS[i] = "Aza 6.9 \t";               
                     if (ws=='1'){
                         warna[i] = "Putih \t";
                         hg[i] = 599000;
@@ -226,7 +226,7 @@ public class NewClass {
                         hg[i] = 599000;
                     }break;
                 case 'b':
-                    jS[i] = "Ardiles Frodo \t";
+                    jS[i] = "Frodo \t";
                     if (ws=='1'){
                         warna[i] = "Biru-Putih \t";
                         hg[i] = 194900;
@@ -235,7 +235,7 @@ public class NewClass {
                         hg[i] = 194900;
                     }break;
                 case 'c':
-                    jS[i] = "Ardiles Fujitora \t";
+                    jS[i] = "Fujitora \t";
                     if (ws=='1'){
                         warna[i] = "Hitam \t\t";
                         hg[i] = 189000;
@@ -276,13 +276,13 @@ public class NewClass {
                 
             switch (js){
                 case 'a':
-                    jS[i] = "Eagle Bellagio \t\t";
+                    jS[i] = "Bellagio \t\t";
                     if (ws=='1'){
                         warna[i] = "Hitam-Putih \t";
                         hg[i] = 249000;
                     }break;
                 case 'b':
-                    jS[i] = "Eagle Monza \t\t";
+                    jS[i] = "Monza \t\t";
                     if (ws=='1'){
                         warna[i] = "Hitam-Putih \t";
                         hg[i] = 239000;
@@ -294,7 +294,7 @@ public class NewClass {
                         hg[i] = 239000;
                     }break;
                 case 'c':
-                    jS[i] = "Eagle Revor \t\t";
+                    jS[i] = "Revor \t\t";
                     if (ws=='1'){
                         warna[i] = "Hitam \t\t";
                         hg[i] = 278000;
@@ -332,7 +332,7 @@ public class NewClass {
             
             switch (js){
                 case 'a':
-                    jS[i] = "Johnson Galaxy Pro Lowcut";
+                    jS[i] = "Galaxy Pro Lowcut";
                     if (ws=='1'){
                         warna[i] = "Abu-Merah-Putih";
                         hg[i] = 379800;
@@ -365,13 +365,13 @@ public class NewClass {
                 
             switch (js){
                 case 'a':
-                    jS[i] = "Piero City Core B";
+                    jS[i] = "City Core B";
                     if (ws=='1'){
                         warna[i] = "Hitam-Putih \t";
                         hg[i] = 329800;
                     }break;    
                 case 'b':
-                    jS[i] = "Piero Cruzher \t";
+                    jS[i] = "Cruzher \t";
                     if (ws=='1'){
                         warna[i] = "Asphalt Black \t";
                         hg[i] = 429800;
@@ -406,7 +406,7 @@ public class NewClass {
                 
             switch (js){
                 case 'a':
-                    jS[i] = "Spotec Alpha \t\t";
+                    jS[i] = "Alpha \t\t";
                     if (ws=='1'){
                         warna[i]="Hitam-Biru-Putih";
                         hg[i]=250000;
