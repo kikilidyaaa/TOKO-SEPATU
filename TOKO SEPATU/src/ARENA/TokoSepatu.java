@@ -71,6 +71,7 @@ public class NewClass {
                 System.exit(0);
             default:
                 System.out.println("Pilihan tidak tersedia");
+                menu();
         }
     }
     static void daftarSepatu(){
